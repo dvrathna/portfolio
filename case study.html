@@ -1,0 +1,1012 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swiggy Redesign | UI/UX Case Study</title>
+    <link rel="stylesheet" href="styling.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="back-btn" title="Back to Portfolio">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
+            </a>
+            <div class="logo">Swiggy<span class="highlight">Redesign</span></div>
+            <ul class="nav-links">
+                <li><a href="#overview">Overview</a></li>
+                <li><a href="#problem">Problem & Research</a></li>
+                <li><a href="#journey">Journey Map</a></li>
+                <li><a href="#designs">Design Solutions</a></li>
+            </ul>
+            <a href="resume.pdf" class="btn-resume" download>Resume <i class="fa-solid fa-download"></i></a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero section">
+        <div class="container hero-grid">
+            <div class="hero-content fade-up">
+                <span class="tag">Product Feature Redesign</span>
+                <h1 class="title"><span class="highlight">Group Orders</span> on Swiggy</h1>
+                <p class="subtitle">Introducing intuitive group creation and flexible split payments to make ordering together seamless and hassle-free.</p>
+                
+                <div class="role-grid">
+                    <div class="role-item">
+                        <span class="role-label">Platform</span>
+                        <span class="role-val">Swiggy App</span>
+                    </div>
+                    <div class="role-item">
+                        <span class="role-label">My Role</span>
+                        <span class="role-val">UX Research, User Flow, Wireframing, Feature Concept</span>
+                    </div>
+                </div>
+                
+                <div class="features-pill">
+                    <span class="pill">✨ Create Group Option</span>
+                    <span class="pill">💸 Split Payment</span>
+                </div>
+                
+                <a href="#designs" class="btn primary-btn">Explore Designs</a>
+            </div>
+            <div class="hero-visual fade-up delay-1">
+                <div class="mobile-mockup float" style="max-width: 300px; margin: 0 auto;">
+                    <div class="img-wrapper">
+                        <img src="HOME PAGE.png" alt="Swiggy Home Page Redesign" class="lightbox-trigger">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Overview Section -->
+    <section id="overview" class="section bg-darker">
+        <div class="container">
+            <div class="section-header center fade-up">
+                <h2>About <span class="highlight">Swiggy</span> & Group Orders</h2>
+                <div class="line"></div>
+            </div>
+            
+            <div class="grid-2 fade-up delay-1">
+                <div class="glass-card p-xl">
+                    <h3 class="mb-md">The Platform</h3>
+                    <p class="text-light mb-sm">Swiggy is one of India's leading online food delivery and quick-commerce platforms. It connects users with thousands of restaurants, cloud kitchens, and grocery stores.</p>
+                    <p class="text-light">The app provides several services such as Food delivery, Instamart for groceries, Dineout deals, and Pick-up & drop services.</p>
+                </div>
+                <div class="glass-card p-xl">
+                    <h3 class="mb-md">Group Order Feature</h3>
+                    <p class="text-light mb-sm">Allows multiple people to add items to a single shared order. Designed for friends, colleagues, roommates, or family members wanting to order food together.</p>
+                    <p class="text-light"><strong>How it works:</strong> Create group -> Generate shareable link -> Members join -> Everyone adds items -> Host pays & places order.</p>
+                </div>
+            </div>
+            
+            <!-- Design System Showcase -->
+            <div class="design-system-section mt-xl fade-up delay-1">
+                <div class="section-header center mb-lg">
+                    <h3 class="mb-sm">Design <span class="highlight">System</span></h3>
+                    <p class="text-light">Typography and Color Palette defining the visual mood.</p>
+                </div>
+
+                <div class="design-system-grid">
+                    <!-- Typography Card -->
+                    <div class="system-card glass-card">
+                        <h4>Typography</h4>
+                        <div class="type-showcase">
+                            <div class="type-row">
+                                <div>
+                                    <div class="type-sample-heading">Aa</div>
+                                </div>
+                                <div class="type-details">
+                                    <span class="type-name">Outfit</span>
+                                    <span class="type-weight">Headings • Bold</span>
+                                </div>
+                            </div>
+                            <div class="type-row">
+                                <div>
+                                    <div class="type-sample-body">Aa</div>
+                                </div>
+                                <div class="type-details">
+                                    <span class="type-name">Inter</span>
+                                    <span class="type-weight">Body Text • Regular</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Colors Card -->
+                    <div class="system-card glass-card">
+                        <h4>Color Palette</h4>
+                        <div class="colors-grid">
+                            <div class="color-swatch">
+                                <div class="swatch-circle swatch-bg-orange"></div>
+                                <span class="color-name">Primary</span>
+                                <span class="color-hex">#FC8019</span>
+                            </div>
+                            <div class="color-swatch">
+                                <div class="swatch-circle swatch-bg-dark"></div>
+                                <span class="color-name">Background</span>
+                                <span class="color-hex">#0F1115</span>
+                            </div>
+                            <div class="color-swatch">
+                                <div class="swatch-circle swatch-bg-card"></div>
+                                <span class="color-name">Surface</span>
+                                <span class="color-hex">#191C24</span>
+                            </div>
+                            <div class="color-swatch">
+                                <div class="swatch-circle swatch-bg-text"></div>
+                                <span class="color-name">Text Sec</span>
+                                <span class="color-hex">#A0A4B0</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project Brief -->
+            <div class="grid-2 mt-xl align-items-center fade-up delay-2">
+                <div class="glass-card p-xl highlight-border h-100 flex-column-center">
+                    <h3 class="mb-md highlight">Project Brief</h3>
+                    <p class="text-light text-lg">This project focuses on enhancing the Group Order feature to improve convenience and efficiency. The proposed solution introduces a <strong>"Create & Save Groups"</strong> option, allowing users to form reusable groups (e.g., office team, roommates) for faster ordering. It also integrates a secondary <strong>split payment feature</strong> so participants can pay for individual items after the order is placed, reducing the burden on a single payer.</p>
+                </div>
+                <div class="illustration-card glass-card p-sm text-center h-100 float">
+                    <img src="group_ordering_illustration.png" alt="Group Ordering" class="feature-illustration">
+                </div>
+            </div>
+            
+            <!-- Comparison Section (Old vs New) -->
+            <div class="comparison-section mt-xl fade-up">
+                <div class="section-header center mb-lg">
+                    <h3 class="mb-sm">Screen <span class="highlight">Evolution</span></h3>
+                    <p class="text-light">Comparing the legacy QR experience with the new redesigned flow.</p>
+                </div>
+                
+                <div class="grid-2 align-items-center">
+                    <!-- Before -->
+                    <div class="compare-card glass-card p-lg text-center">
+                        <span class="tag mb-sm" style="color: var(--text-secondary); border: 1px solid var(--text-secondary);">Before: Old Screen</span>
+                        <div class="mobile-mockup mt-md">
+                            <div class="img-wrapper">
+                                <img src="QR old screen.png" alt="Old Swiggy QR Screen" class="lightbox-trigger">
+                            </div>
+                        </div>
+                        <p class="text-light text-sm mt-md">The original QR scanning interface lacked group context and felt disconnected from the shared ordering experience.</p>
+                    </div>
+                    
+                    <!-- After -->
+                    <div class="compare-card glass-card p-lg text-center border-green">
+                        <span class="tag mb-sm" style="color: var(--success); border: 1px solid var(--success);">After: Redesigned Screen</span>
+                        <div class="mobile-mockup mt-md">
+                            <div class="img-wrapper">
+                                <img src="QR SCREEN - REDESIGN.png" alt="Redesigned Swiggy QR Screen" class="lightbox-trigger">
+                            </div>
+                        </div>
+                        <p class="text-light text-sm mt-md">The new design seamlessly integrates the QR scanner directly into the group creation flow with clear actions and modern aesthetics.</p>
+                    </div>
+                </div>
+
+                <div class="grid-2 align-items-center mt-xl">
+                    <!-- Before -->
+                    <div class="compare-card glass-card p-lg text-center">
+                        <span class="tag mb-sm" style="color: var(--text-secondary); border: 1px solid var(--text-secondary);">Before: Old Screen</span>
+                        <div class="mobile-mockup mt-md">
+                            <div class="img-wrapper">
+                                <img src="old cart screen.png" alt="Old Cart Screen" class="lightbox-trigger">
+                            </div>
+                        </div>
+                        <p class="text-light text-sm mt-md">The original cart screen lacked clear group distinction and split payment options.</p>
+                    </div>
+                    
+                    <!-- After -->
+                    <div class="compare-card glass-card p-lg text-center border-green">
+                        <span class="tag mb-sm" style="color: var(--success); border: 1px solid var(--success);">After: Redesigned Screen</span>
+                        <div class="mobile-mockup mt-md">
+                            <div class="img-wrapper">
+                                <img src="new cart screen.png" alt="Redesigned Cart Screen" class="lightbox-trigger">
+                            </div>
+                        </div>
+                        <p class="text-light text-sm mt-md">The new design clearly shows group participants and integrates seamless split payment flow.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Problem & Research Section -->
+    <section id="problem" class="section">
+        <div class="container">
+            <div class="section-header fade-up">
+                <h2>Problem & <span class="highlight">Opportunity</span></h2>
+                <div class="line align-left"></div>
+            </div>
+            
+            <div class="grid-2">
+                <div class="glass-card p-xl fade-up border-red">
+                    <div class="icon-header">
+                        <span class="icon red">⚠️</span>
+                        <h3>The Problem</h3>
+                    </div>
+                    <p class="text-light mb-md">The current experience forces users to <strong>choose a restaurant first</strong> before inviting others. This creates friction because:</p>
+                    <ul class="custom-list mb-md">
+                        <li>Not everyone wants food from the same restaurant</li>
+                        <li>People discuss options in unorganized chat apps</li>
+                        <li>The host must coordinate orders manually</li>
+                    </ul>
+                    <div class="example-box">
+                        <strong>Example Situation:</strong>
+                        <div class="flex-between mt-sm">
+                            <span>Rahul → Wants Pizza</span>
+                            <span>Priya → Wants Biryani</span>
+                        </div>
+                        <p class="text-red mt-sm small">But the current system only allows ONE restaurant selection.</p>
+                    </div>
+                </div>
+                
+                <div class="glass-card p-xl fade-up delay-1 border-green">
+                    <div class="icon-header">
+                        <span class="icon green">💡</span>
+                        <h3>The Opportunity & Goal</h3>
+                    </div>
+                    <p class="text-light mb-md">Allow users to <strong>create the group first</strong>, then let members "choose their own restaurants" while delivering to the "same location".</p>
+                    
+                    <h4 class="mb-sm">System Goals:</h4>
+                    <ul class="custom-list">
+                        <li>The host creates a group</li>
+                        <li>Members join using a link</li>
+                        <li>Everyone orders from any restaurant</li>
+                        <li>All deliveries arrive at the same location</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="grid-2 mt-xl align-items-center fade-up">
+                <div class="illustration-card glass-card p-sm text-center h-100 float-delayed" style="border-top: 3px solid var(--success);">
+                    <img src="multiple_restaurants_illustration.png" alt="Multiple Restaurants Delivery" class="feature-illustration">
+                </div>
+                <div class="glass-card p-xl border-orange h-100 flex-column-center">
+                    <h3 class="mb-md">The Split Payment Dilemma</h3>
+                    <p class="text-light text-lg mb-sm">Our research revealed that coordinating the financial aspect of group orders is often more stressful than agreeing on what to eat.</p>
+                    <p class="text-light text-lg">By introducing a native split payment feature and allowing independent carts, we remove the awkwardness of chasing friends for money and integrate everything into one seamless flow.</p>
+                </div>
+            </div>
+            
+            <div class="grid-2 mt-xl mb-xl align-items-center fade-up delay-1">
+                <div class="glass-card p-xl border-red h-100 flex-column-center">
+                    <h3 class="mb-md">Multi-Restaurant Flexibility</h3>
+                    <p class="text-light text-lg mb-sm">Why should everyone compromise on a single cuisine?</p>
+                    <p class="text-light text-lg">The new flow lets users build a shared cart but pick from entirely different restaurants. All orders arrive at the same destination, keeping the group together without sacrificing choice.</p>
+                </div>
+                <div class="illustration-card glass-card p-sm text-center h-100 float">
+                    <img src="split_payment_illustration.png" alt="Split Payment Concept" class="feature-illustration">
+                </div>
+            </div>
+
+            <div class="research-insights glass-card mt-xl p-xl fade-up">
+                <h3 class="mb-md center">🔍 Research Insights</h3>
+                <div class="insights-grid">
+                    <div class="insight-item">
+                        <span class="insight-num">01</span>
+                        <p>People coordinate food orders on <strong>chat apps</strong>.</p>
+                    </div>
+                    <div class="insight-item">
+                        <span class="insight-num">02</span>
+                        <p>Different people prefer <strong>different cuisines</strong>.</p>
+                    </div>
+                    <div class="insight-item">
+                        <span class="insight-num">03</span>
+                        <p>One person usually <strong>manages the final order</strong>.</p>
+                    </div>
+                    <div class="insight-item">
+                        <span class="insight-num">04</span>
+                        <p>Time limits are needed to <strong>avoid late orders</strong>.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- User Journey Map -->
+    <section id="journey" class="section">
+        <div class="container">
+            <div class="section-header center fade-up">
+                <h2>User<span class="highlight">Journey Map</span></h2>
+                <div class="line"></div>
+                <p class="text-light mt-md">Swiggy Group Order Enhancement - Mapping the user actions, pain points, and design solutions.</p>
+            </div>
+            
+            <div class="table-responsive fade-up">
+                <table class="journey-table glass-card">
+                    <thead>
+                        <tr>
+                            <th>Stage</th>
+                            <th>User Actions</th>
+                            <th>Thoughts / Needs</th>
+                            <th>Pain Points</th>
+                            <th>Opportunities (Design Solutions)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td data-label="Stage"><strong>1. Discover / Need</strong></td>
+                            <td data-label="User Actions">User wants to order food with friends, roommates, or colleagues.</td>
+                            <td data-label="Thoughts / Needs">"Everyone wants something different. How do I collect all orders quickly?"</td>
+                            <td data-label="Pain Points">Taking orders in WhatsApp or manually adding items is confusing.</td>
+                            <td data-label="Opportunities" class="text-highlight">Provide Group Order entry point on restaurant page with clear CTA.</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Stage"><strong>2. Create / Select Group</strong></td>
+                            <td data-label="User Actions">User starts a group order and invites people.</td>
+                            <td data-label="Thoughts / Needs">"I order with the same people often."</td>
+                            <td data-label="Pain Points">Re-adding contacts every time is repetitive and time-consuming.</td>
+                            <td data-label="Opportunities" class="text-highlight">Introduce Saved Groups (Office Team, Flatmates, Friends). Users can create or reuse groups.</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Stage"><strong>3. Add Members & Share Link</strong></td>
+                            <td data-label="User Actions">User shares invite link or selects saved group members.</td>
+                            <td data-label="Thoughts / Needs">"Everyone should add their own food."</td>
+                            <td data-label="Pain Points">Some members forget to add items or miss the link.</td>
+                            <td data-label="Opportunities" class="text-highlight">Show live member activity, reminders, and join notifications.</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Stage"><strong>4. Add Items to Cart</strong></td>
+                            <td data-label="User Actions">Each participant browses the menu and adds their own items.</td>
+                            <td data-label="Thoughts / Needs">"I only want to pay for my food."</td>
+                            <td data-label="Pain Points">One person usually ends up paying the full bill.</td>
+                            <td data-label="Opportunities" class="text-highlight">Add Secondary Split Payment option so each member pays their share.</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Stage"><strong>5. Review & Checkout</strong></td>
+                            <td data-label="User Actions">Host reviews cart and places order.</td>
+                            <td data-label="Thoughts / Needs">"Is everyone done adding items?"</td>
+                            <td data-label="Pain Points">Confusion about order completion and payment responsibility.</td>
+                            <td data-label="Opportunities" class="text-highlight">Show member order summary + confirmation before checkout.</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Stage"><strong>6. Payment & Split</strong></td>
+                            <td data-label="User Actions">Host pays initially or selects split payment option.</td>
+                            <td data-label="Thoughts / Needs">"I shouldn't chase everyone for money later."</td>
+                            <td data-label="Pain Points">Collecting money through UPI after ordering is inconvenient.</td>
+                            <td data-label="Opportunities" class="text-highlight">Enable auto payment request / split bill inside the app.</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Stage"><strong>7. Delivery & Post-Order</strong></td>
+                            <td data-label="User Actions">Group tracks delivery and receives food together.</td>
+                            <td data-label="Thoughts / Needs">"That was easier than before."</td>
+                            <td data-label="Pain Points">No easy way to repeat same group order later.</td>
+                            <td data-label="Opportunities" class="text-highlight">Add Reorder with Saved Group for faster future orders.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- Competitor Analysis Section -->
+    <section id="competitor-analysis" class="section bg-darker">
+        <div class="container">
+            <div class="section-header center fade-up">
+                <span class="tag">Qualitative</span>
+                <h2>Competitor <span class="highlight">Analysis</span></h2>
+                <div class="line"></div>
+                <p class="text-light mt-md">Comparing Group Order and Create Group features across major food delivery platforms.</p>
+            </div>
+            
+            <div class="table-responsive fade-up delay-1">
+                <table class="journey-table glass-card">
+                    <thead>
+                        <tr>
+                            <th>Feature / Platform</th>
+                            <th>Swiggy (Proposed)</th>
+                            <th>Zomato</th>
+                            <th>Meet &amp; Eat</th>
+                            <th>EatClub</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td data-label="Feature"><strong>Create Group Option</strong></td>
+                            <td data-label="Swiggy (Proposed)" class="text-highlight">Pre-restaurant selection</td>
+                            <td data-label="Zomato">Post-restaurant selection</td>
+                            <td data-label="Meet &amp; Eat">Pre-restaurant selection</td>
+                            <td data-label="EatClub">Pre-restaurant selection</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Feature"><strong>Add Members via Link</strong></td>
+                            <td data-label="Swiggy (Proposed)" class="text-highlight">Yes</td>
+                            <td data-label="Zomato">Yes</td>
+                            <td data-label="Meet &amp; Eat">Yes</td>
+                            <td data-label="EatClub">Yes</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Feature"><strong>Flexible Restaurant Selection</strong></td>
+                            <td data-label="Swiggy (Proposed)" class="text-highlight">Yes (Multiple restaurants, same location)</td>
+                            <td data-label="Zomato">No (Single restaurant)</td>
+                            <td data-label="Meet &amp; Eat">Yes (Food Court model)</td>
+                            <td data-label="EatClub">No (In-house brands)</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Feature"><strong>Split Payment</strong></td>
+                            <td data-label="Swiggy (Proposed)" class="text-highlight">Yes (In-app auto requests)</td>
+                            <td data-label="Zomato">No</td>
+                            <td data-label="Meet &amp; Eat">Yes</td>
+                            <td data-label="EatClub">No</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Feature"><strong>Saved Groups for Reorder</strong></td>
+                            <td data-label="Swiggy (Proposed)" class="text-highlight">Yes</td>
+                            <td data-label="Zomato">No</td>
+                            <td data-label="Meet &amp; Eat">No</td>
+                            <td data-label="EatClub">No</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- Survey Questions Section -->
+    <section id="survey-questions" class="section">
+        <div class="container">
+            <div class="section-header center fade-up">
+                <span class="tag">Quantitative</span>
+                <h2>User <span class="highlight">Survey</span></h2>
+                <div class="line"></div>
+                <p class="text-light mt-md">Key insights gathered from user surveys regarding group ordering behaviors and pain points.</p>
+            </div>
+            
+            <div class="grid-2 fade-up delay-1">
+                <!-- Q1 & Q2 -->
+                <div class="glass-card p-xl border-orange mb-md">
+                    <h4 class="mb-sm">1. How often do you order food with a group?</h4>
+                    <div class="survey-options mt-md">
+                        <div class="survey-option">
+                            <div class="flex-between mb-sm"><span class="text-light text-sm">A) Weekly</span><span class="text-highlight text-sm">42%</span></div>
+                            <div class="progress-bar-bg"><div class="progress-bar-fill" style="width: 42%;"></div></div>
+                        </div>
+                        <div class="survey-option mt-sm">
+                            <div class="flex-between mb-sm"><span class="text-light text-sm">B) A few times a month</span><span class="text-highlight text-sm">35%</span></div>
+                            <div class="progress-bar-bg"><div class="progress-bar-fill" style="width: 35%;"></div></div>
+                        </div>
+                        <div class="survey-option mt-sm">
+                            <div class="flex-between mb-sm"><span class="text-light text-sm">C) Rarely</span><span class="text-highlight text-sm">18%</span></div>
+                            <div class="progress-bar-bg"><div class="progress-bar-fill" style="width: 18%; background: var(--text-secondary);"></div></div>
+                        </div>
+                        <div class="survey-option mt-sm">
+                            <div class="flex-between mb-sm"><span class="text-light text-sm">D) Never</span><span class="text-highlight text-sm">5%</span></div>
+                            <div class="progress-bar-bg"><div class="progress-bar-fill" style="width: 5%; background: var(--text-secondary);"></div></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="glass-card p-xl border-orange mb-md">
+                    <h4 class="mb-sm">2. What is your biggest frustration when coordinating a group order?</h4>
+                    <div class="survey-options mt-md">
+                        <div class="survey-option">
+                            <div class="flex-between mb-sm"><span class="text-light text-sm">A) Agreeing on a single restaurant</span><span class="text-highlight text-sm">48%</span></div>
+                            <div class="progress-bar-bg"><div class="progress-bar-fill" style="width: 48%;"></div></div>
+                        </div>
+                        <div class="survey-option mt-sm">
+                            <div class="flex-between mb-sm"><span class="text-light text-sm">B) Delayed responses</span><span class="text-highlight text-sm">25%</span></div>
+                            <div class="progress-bar-bg"><div class="progress-bar-fill" style="width: 25%;"></div></div>
+                        </div>
+                        <div class="survey-option mt-sm">
+                            <div class="flex-between mb-sm"><span class="text-light text-sm">C) Collecting payments</span><span class="text-highlight text-sm">15%</span></div>
+                            <div class="progress-bar-bg"><div class="progress-bar-fill" style="width: 15%; background: var(--text-secondary);"></div></div>
+                        </div>
+                        <div class="survey-option mt-sm">
+                            <div class="flex-between mb-sm"><span class="text-light text-sm">D) Adding items manually</span><span class="text-highlight text-sm">12%</span></div>
+                            <div class="progress-bar-bg"><div class="progress-bar-fill" style="width: 12%; background: var(--text-secondary);"></div></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Q3 & Q4 -->
+                <div class="glass-card p-xl border-orange mb-md">
+                    <h4 class="mb-sm">3. If you could create a "Saved Group" (e.g., Office Lunch), would it save time?</h4>
+                    <div class="survey-options mt-md">
+                        <div class="survey-option">
+                            <div class="flex-between mb-sm"><span class="text-light text-sm">A) Yes, absolutely</span><span class="text-highlight text-sm">62%</span></div>
+                            <div class="progress-bar-bg"><div class="progress-bar-fill" style="width: 62%;"></div></div>
+                        </div>
+                        <div class="survey-option mt-sm">
+                            <div class="flex-between mb-sm"><span class="text-light text-sm">B) Probably, for frequent events</span><span class="text-highlight text-sm">20%</span></div>
+                            <div class="progress-bar-bg"><div class="progress-bar-fill" style="width: 20%; background: var(--text-secondary);"></div></div>
+                        </div>
+                        <div class="survey-option mt-sm">
+                            <div class="flex-between mb-sm"><span class="text-light text-sm">C) Maybe</span><span class="text-highlight text-sm">12%</span></div>
+                            <div class="progress-bar-bg"><div class="progress-bar-fill" style="width: 12%; background: var(--text-secondary);"></div></div>
+                        </div>
+                        <div class="survey-option mt-sm">
+                            <div class="flex-between mb-sm"><span class="text-light text-sm">D) No, I order with different people</span><span class="text-highlight text-sm">6%</span></div>
+                            <div class="progress-bar-bg"><div class="progress-bar-fill" style="width: 6%; background: var(--text-secondary);"></div></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="glass-card p-xl border-orange mb-md">
+                    <h4 class="mb-sm">4. How do you usually handle the bill for a group order?</h4>
+                    <div class="survey-options mt-md">
+                        <div class="survey-option">
+                            <div class="flex-between mb-sm"><span class="text-light text-sm">A) One pays, settles via UPI later</span><span class="text-highlight text-sm">65%</span></div>
+                            <div class="progress-bar-bg"><div class="progress-bar-fill" style="width: 65%;"></div></div>
+                        </div>
+                        <div class="survey-option mt-sm">
+                            <div class="flex-between mb-sm"><span class="text-light text-sm">B) Take turns paying</span><span class="text-highlight text-sm">20%</span></div>
+                            <div class="progress-bar-bg"><div class="progress-bar-fill" style="width: 20%;"></div></div>
+                        </div>
+                        <div class="survey-option mt-sm">
+                            <div class="flex-between mb-sm"><span class="text-light text-sm">C) Calculate/send money before ordering</span><span class="text-highlight text-sm">10%</span></div>
+                            <div class="progress-bar-bg"><div class="progress-bar-fill" style="width: 10%; background: var(--text-secondary);"></div></div>
+                        </div>
+                        <div class="survey-option mt-sm">
+                            <div class="flex-between mb-sm"><span class="text-light text-sm">D) Ask delivery agent to split cash</span><span class="text-highlight text-sm">5%</span></div>
+                            <div class="progress-bar-bg"><div class="progress-bar-fill" style="width: 5%; background: var(--text-secondary);"></div></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Q5 (Spans full width) -->
+                <div class="glass-card p-xl border-orange" style="grid-column: 1 / -1;">
+                    <h4 class="mb-sm center">5. Would you use a feature that shares a link allowing everyone to add items to a shared cart independently?</h4>
+                    <div class="survey-options mt-md grid-4" style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.5rem;">
+                        <div class="survey-option">
+                            <div class="flex-between mb-sm"><span class="text-light text-sm">A) Very likely</span><span class="text-highlight text-sm">70%</span></div>
+                            <div class="progress-bar-bg"><div class="progress-bar-fill" style="width: 70%;"></div></div>
+                        </div>
+                        <div class="survey-option">
+                            <div class="flex-between mb-sm"><span class="text-light text-sm">B) Somewhat likely</span><span class="text-highlight text-sm">15%</span></div>
+                            <div class="progress-bar-bg"><div class="progress-bar-fill" style="width: 15%; background: var(--text-secondary);"></div></div>
+                        </div>
+                        <div class="survey-option">
+                            <div class="flex-between mb-sm"><span class="text-light text-sm">C) Undecided</span><span class="text-highlight text-sm">9%</span></div>
+                            <div class="progress-bar-bg"><div class="progress-bar-fill" style="width: 9%; background: var(--text-secondary);"></div></div>
+                        </div>
+                        <div class="survey-option">
+                            <div class="flex-between mb-sm"><span class="text-light text-sm">D) Unlikely</span><span class="text-highlight text-sm">6%</span></div>
+                            <div class="progress-bar-bg"><div class="progress-bar-fill" style="width: 6%; background: var(--text-secondary);"></div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Empathy Mapping Section -->
+    <section id="empathy-mapping" class="section bg-darker">
+        <div class="container">
+            <div class="section-header center fade-up">
+                <span class="tag">Qualitative Synthesis</span>
+                <h2>Empathy <span class="highlight">Mapping</span></h2>
+                <div class="line"></div>
+                <p class="text-light mt-md">Synthesizing the survey insights to understand what group order users think, feel, say, and do.</p>
+            </div>
+            
+            <div class="grid-2 mt-xl fade-up delay-1">
+                <!-- SAYS -->
+                <div class="glass-card p-xl border-orange">
+                    <div class="icon-header">
+                        <span class="icon" style="color: var(--swiggy-orange);">💬</span>
+                        <h3>Says</h3>
+                    </div>
+                    <ul class="custom-list mt-sm">
+                        <li>"I'll pay now, just send me the money on UPI later."</li>
+                        <li>"Can we order from another place? I don't want pizza today."</li>
+                        <li>"Who hasn't added their items yet? We've been waiting for 20 minutes."</li>
+                        <li>"Wait, I wanted extra cheese on mine. Let me tell them."</li>
+                    </ul>
+                </div>
+                
+                <!-- THINKS -->
+                <div class="glass-card p-xl border-green">
+                    <div class="icon-header">
+                        <span class="icon green">💭</span>
+                        <h3>Thinks</h3>
+                    </div>
+                    <ul class="custom-list mt-sm">
+                        <li>"It’s always a hassle to tally up who ordered what after the food arrives."</li>
+                        <li>"I wish I could just save my office lunch group; adding 5 people every time is annoying."</li>
+                        <li>"I feel bad asking people for ₹150; it's awkward."</li>
+                        <li>"It would be so much faster if everyone just built their own cart."</li>
+                    </ul>
+                </div>
+
+                <!-- DOES -->
+                <div class="glass-card p-xl" style="border-top: 3px solid #007bff;">
+                    <div class="icon-header">
+                        <span class="icon" style="color: #007bff;">📱</span>
+                        <h3>Does</h3>
+                    </div>
+                    <ul class="custom-list mt-sm">
+                        <li>Shares a restaurant link in an unorganized WhatsApp group to gather choices.</li>
+                        <li>Takes screenshots of the final Swiggy bill and MS Paint highlights who owes what.</li>
+                        <li>The "host" manually passes their phone around the room so people can add food.</li>
+                        <li>Abandons the group order entirely and just orders individually.</li>
+                    </ul>
+                </div>
+
+                <!-- FEELS -->
+                <div class="glass-card p-xl border-red">
+                    <div class="icon-header">
+                        <span class="icon red">❤️</span>
+                        <h3>Feels</h3>
+                    </div>
+                    <ul class="custom-list mt-sm">
+                        <li><strong>Frustrated</strong> when forced to compromise on a single restaurant choice.</li>
+                        <li><strong>Burdened</strong> when they have to cover the entire massive bill upfront.</li>
+                        <li><strong>Anxious</strong> about chasing friends for small debts post-meal.</li>
+                        <li><strong>Annoyed</strong> by the slow, chaotic coordination delay in chat apps.</li>
+                    </ul>
+                </div>
+            </div>
+    <!-- User Flow Diagram Section -->
+    <section id="user-flow" class="section">
+        <div class="container">
+            <div class="section-header center fade-up">
+                <span class="tag">Architecture</span>
+                <h2>User <span class="highlight">Flow</span></h2>
+                <div class="line"></div>
+                <p class="text-light mt-md">Step-by-step user journey for creating and managing a group order.</p>
+            </div>
+            
+            <div class="user-flow-container mt-xl fade-up delay-1">
+                <div class="flow-path">
+                    
+                    <!-- Entry Points -->
+                    <div class="flow-row">
+                        <div class="flow-step entry-step">
+                            <span class="step-icon">🏠</span>
+                            <span class="step-name">Home Page</span>
+                        </div>
+                        <div class="flow-connector horizontal"></div>
+                        <div class="flow-step">
+                            <span class="step-icon">🍔</span>
+                            <span class="step-name">Food Menu</span>
+                        </div>
+                    </div>
+
+                    <div class="flow-divider">
+                        <span>OR</span>
+                    </div>
+
+                    <div class="flow-row">
+                        <div class="flow-step entry-step">
+                            <span class="step-icon">📷</span>
+                            <span class="step-name">QR Screen</span>
+                        </div>
+                    </div>
+
+                    <div class="flow-connector vertical main-drop"></div>
+
+                    <!-- Group Selection -->
+                    <div class="flow-row group-selection-split">
+                        <div class="flow-branch">
+                            <div class="flow-step">
+                                <span class="step-icon">👥</span>
+                                <span class="step-name">Existing Group Preview</span>
+                            </div>
+                        </div>
+                        <div class="flow-branch">
+                            <div class="flow-step highlight-step">
+                                <span class="step-icon">➕</span>
+                                <span class="step-name">Create New Group</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="flow-connector vertical create-drop"></div>
+
+                    <!-- Configuration -->
+                    <div class="flow-row flex-column">
+                        <div class="flow-step">
+                            <span class="step-icon">💰</span>
+                            <span class="step-name">Budget Type</span>
+                        </div>
+                        <div class="flow-connector vertical short"></div>
+                        <div class="flow-step">
+                            <span class="step-icon">⚙️</span>
+                            <span class="step-name">Selection of Budget</span>
+                        </div>
+                        <div class="flow-connector vertical short"></div>
+                        <div class="flow-step">
+                            <span class="step-icon">🏪</span>
+                            <span class="step-name">Selective Restaurant</span>
+                        </div>
+                        <div class="flow-connector vertical short"></div>
+                        <div class="flow-step">
+                            <span class="step-icon">📩</span>
+                            <span class="step-name">Add Members</span>
+                        </div>
+                    </div>
+
+                    <div class="flow-connector vertical combine-drop"></div>
+
+                    <!-- Finalization -->
+                    <div class="flow-row flex-column">
+                        <div class="flow-step">
+                            <span class="step-icon">💳</span>
+                            <span class="step-name">Payment (Split)</span>
+                        </div>
+                        <div class="flow-connector vertical short"></div>
+                        <div class="flow-step final-step">
+                            <span class="step-icon">🎉</span>
+                            <span class="step-name">Created Group - Live Dashboard</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Design Solutions -->
+    <section id="designs" class="section">
+        <div class="container">
+            <div class="section-header center fade-up">
+                <h2>Design <span class="highlight">Solutions</span></h2>
+                <div class="line"></div>
+                <p class="text-light mt-md">Create Group → Invite → Order Anywhere flow implemented.</p>
+            </div>
+            
+            <div class="design-gallery grid-3">
+                <!-- 1. HOME PAGE -->
+                <div class="gallery-item glass-card fade-up">
+                    <div class="flow-arrow"></div>
+                    <div class="mobile-mockup">
+                        <div class="img-wrapper">
+                            <img src="HOME PAGE.png" alt="Home Page" class="lightbox-trigger">
+                        </div>
+                    </div>
+                    <div class="gallery-info">
+                        <h3>Home Page</h3>
+                        <p>The redesigned main entry point with group order accessibility.</p>
+                    </div>
+                </div>
+
+                <!-- 2. FOOD MENU -->
+                <div class="gallery-item glass-card fade-up delay-1">
+                    <div class="flow-arrow"></div>
+                    <div class="mobile-mockup">
+                        <div class="img-wrapper">
+                            <img src="FOOD MENU.png" alt="Food Menu" class="lightbox-trigger">
+                        </div>
+                    </div>
+                    <div class="gallery-info">
+                        <h3>Food Menu</h3>
+                        <p>Shared cart where users add items without impacting others.</p>
+                    </div>
+                </div>
+
+                <!-- 3. QR SCREEN - REDESIGN -->
+                <div class="gallery-item glass-card fade-up delay-2">
+                    <div class="flow-arrow"></div>
+                    <div class="mobile-mockup">
+                        <div class="img-wrapper">
+                            <img src="QR SCREEN - REDESIGN.png" alt="Redesigned QR Screen" class="lightbox-trigger">
+                        </div>
+                    </div>
+                    <div class="gallery-info">
+                        <h3>QR Code Scanner</h3>
+                        <p>New integrated scanner to quickly join a table or group.</p>
+                    </div>
+                </div>
+                
+                <!-- 4. EXISTING GROUP PREVIEW -->
+                <div class="gallery-item glass-card fade-up">
+                    <div class="flow-arrow"></div>
+                    <div class="mobile-mockup">
+                        <div class="img-wrapper">
+                            <img src="EXISTING GROUP PREVIEW.png" alt="Existing Group Preview" class="lightbox-trigger">
+                        </div>
+                    </div>
+                    <div class="gallery-info">
+                        <h3>Saved Groups</h3>
+                        <p>Quick access to frequent groups like 'Team Lunch'.</p>
+                    </div>
+                </div>
+
+                <!-- 5. CREATE NEW GROUP -->
+                <div class="gallery-item glass-card fade-up delay-1">
+                    <div class="flow-arrow"></div>
+                    <div class="mobile-mockup">
+                        <div class="img-wrapper">
+                            <img src="CREATE NEW GROUP.png" alt="Create New Group" class="lightbox-trigger">
+                        </div>
+                    </div>
+                    <div class="gallery-info">
+                        <h3>Create Group</h3>
+                        <p>Initiate group orders easily before selecting restaurants.</p>
+                    </div>
+                </div>
+
+                <!-- 6. BUDGET TYPE -->
+                <div class="gallery-item glass-card fade-up delay-2">
+                    <div class="flow-arrow"></div>
+                    <div class="mobile-mockup">
+                        <div class="img-wrapper">
+                            <img src="BUDGET  TYPE.png" alt="Budget Type Selection" class="lightbox-trigger">
+                        </div>
+                    </div>
+                    <div class="gallery-info">
+                        <h3>Budgeting</h3>
+                        <p>Set budget limits for corporate or team orders.</p>
+                    </div>
+                </div>
+                
+                <!-- 7. SELECTION OF BUDGET TYPE -->
+                <div class="gallery-item glass-card fade-up">
+                    <div class="flow-arrow"></div>
+                    <div class="mobile-mockup">
+                        <div class="img-wrapper">
+                            <img src="SELECTION OF BUDGET TYPE.png" alt="Selection of Budget Type" class="lightbox-trigger">
+                        </div>
+                    </div>
+                    <div class="gallery-info">
+                        <h3>Budget Settings</h3>
+                        <p>Configure amounts and rules for the shared order budget.</p>
+                    </div>
+                </div>
+
+                <!-- 8. SELECTIVE RESTAURANT -->
+                <div class="gallery-item glass-card fade-up delay-1">
+                    <div class="flow-arrow"></div>
+                    <div class="mobile-mockup">
+                        <div class="img-wrapper">
+                            <img src="SELECTIVE  RESTAURANT.png" alt="Selective Restaurant" class="lightbox-trigger">
+                        </div>
+                    </div>
+                    <div class="gallery-info">
+                        <h3>Flexible Selection</h3>
+                        <p>Members can choose to order from different restaurants.</p>
+                    </div>
+                </div>
+
+                <!-- 9. ADD MEMBERS -->
+                <div class="gallery-item glass-card fade-up delay-2">
+                    <div class="flow-arrow"></div>
+                    <div class="flow-arrow-down"></div>
+                    <div class="mobile-mockup">
+                        <div class="img-wrapper">
+                            <img src="ADD MEMBERS.png" alt="Add Members" class="lightbox-trigger">
+                        </div>
+                    </div>
+                    <div class="gallery-info">
+                        <h3>Add Members</h3>
+                        <p>Invite friends and save groups for quick future orders.</p>
+                    </div>
+                </div>
+
+                <!-- 10. PAYMENT -->
+                <div class="gallery-item glass-card fade-up">
+                    <div class="flow-arrow"></div>
+                    <div class="flow-arrow-down"></div>
+                    <div class="mobile-mockup">
+                        <div class="img-wrapper">
+                            <img src="PAYMENT.png" alt="Split Payment" class="lightbox-trigger">
+                        </div>
+                    </div>
+                    <div class="gallery-info">
+                        <h3>Split Payment</h3>
+                        <p>Equitable auto-requests to each member within the app.</p>
+                    </div>
+                </div>
+
+                <!-- 11. CREATED GROUP - TEAM LUNCH -->
+                <div class="gallery-item glass-card fade-up delay-1">
+                    <div class="flow-arrow"></div>
+                    <div class="mobile-mockup">
+                        <div class="img-wrapper">
+                            <img src="CREATED GROUP - TEAM LUNCH.png" alt="Created Group Team Lunch" class="lightbox-trigger">
+                        </div>
+                    </div>
+                    <div class="gallery-info">
+                        <h3>Live Dashboard</h3>
+                        <p>Track who has joined and finished ordering in real-time.</p>
+                    </div>
+                </div>
+
+                <!-- 12. NEW CART SCREEN -->
+                <div class="gallery-item glass-card fade-up delay-2">
+                    <div class="flow-arrow"></div>
+                    <div class="mobile-mockup">
+                        <div class="img-wrapper">
+                            <img src="new cart screen.png" alt="New Cart Screen" class="lightbox-trigger">
+                        </div>
+                    </div>
+                    <div class="gallery-info">
+                        <h3>New Cart Screen</h3>
+                        <p>Clearly shows group participants and seamless split payment flow.</p>
+                    </div>
+                </div>
+
+                <!-- 13. FINAL CART & PAY -->
+                <div class="gallery-item glass-card fade-up">
+                    <div class="flow-arrow"></div>
+                    <div class="flow-arrow-down"></div>
+                    <div class="mobile-mockup">
+                        <div class="img-wrapper">
+                            <img src="final cart & pay.png" alt="Final Cart & Pay" class="lightbox-trigger">
+                        </div>
+                    </div>
+                    <div class="gallery-info">
+                        <h3>Final Cart & Pay</h3>
+                        <p>Checkout screen for the overall group order.</p>
+                    </div>
+                </div>
+
+                <!-- 14. SPLIT PAYMENT LIVE STATUS -->
+                <!-- No arrows for the very last item in the flow -->
+                <div class="gallery-item glass-card fade-up delay-1">
+                    <div class="mobile-mockup">
+                        <div class="img-wrapper">
+                            <img src="split payment.png" alt="Split Payment Live Status" class="lightbox-trigger">
+                        </div>
+                    </div>
+                    <div class="gallery-info">
+                        <h3>Live Status</h3>
+                        <p>Track the split payment status among group members.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Impact & Conclusion -->
+    <section class="section bg-darker" id="impact">
+        <div class="container">
+            <div class="glass-card highlight-border padding-xxl text-center fade-up">
+                <h2 class="mb-lg">Project <span class="highlight">Impact</span></h2>
+                
+                <div class="grid-2 text-left mt-xl">
+                    <div class="impact-box">
+                        <h3 class="mb-md">🧑‍🤝‍🧑 User Benefits</h3>
+                        <ul class="custom-list">
+                            <li>Freedom to choose food from preferred places</li>
+                            <li>No messy group chats or external UPI tracking</li>
+                            <li>Transparent group orders with clear summaries</li>
+                            <li>Faster coordination and future reordering</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="impact-box">
+                        <h3 class="mb-md">📈 Business Benefits</h3>
+                        <ul class="custom-list">
+                            <li>Higher average order value</li>
+                            <li>Increased group ordering frequency</li>
+                            <li>More restaurant exposure across user bases</li>
+                            <li>Increased overall app engagement and retention</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container center">
+            <div class="footer-learnings mb-lg">
+                <h3 class="mb-md highlight">What I Learned from this Project</h3>
+                <p class="text-light text-sm mb-sm">1. <strong>Designing for diverse choices:</strong> Simplifying a complex group flow requires prioritizing user freedom over rigid system constraints.</p>
+                <p class="text-light text-sm mb-sm">2. <strong>Post-order experience is critical:</strong> Solving the friction of splitting bills is just as important as the food ordering process itself.</p>
+                <p class="text-light text-sm">3. <strong>Data-driven empathy:</strong> Transforming survey data into actionable UI features is the key to building an intuitive and successful product.</p>
+            </div>
+            <div class="line mb-md" style="margin-left: auto; margin-right: auto; opacity: 0.2;"></div>
+            <p>Swiggy Redesign Concept. Case study for portfolio purposes.</p>
+        </div>
+    </footer>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="lightbox">
+        <span class="close-lightbox">&times;</span>
+        <img class="lightbox-content" id="lightbox-img">
+        <div id="lightbox-caption"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

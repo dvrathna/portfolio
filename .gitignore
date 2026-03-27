@@ -1,0 +1,8 @@
+# Project ignore
+.gemini/
+backup_swiggy_redesign/
+.vscode/
+*.txt
+*.pdf
+# Netlify artifacts
+.netlify/
