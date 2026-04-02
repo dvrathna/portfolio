@@ -1,14 +1,14 @@
 :root {
-    --primary: #3b82f6; /* Ocean Blue */
-    --primary-light: rgba(59, 130, 246, 0.1);
-    --secondary: #60a5fa; /* Sky Blue */
-    --accent: #93c5fd; /* Soft Blue Accent */
-    --bg-main: #0f172a;
-    --bg-surface: #1e293b;
+    --primary: #a855f7; /* Royal Purple */
+    --primary-light: rgba(168, 85, 247, 0.1);
+    --secondary: #ec4899; /* Vibrant Pink */
+    --accent: #f472b6; /* Soft Pink Accent */
+    --bg-main: #0d0016;
+    --bg-surface: #1a002a;
     --text-main: #f1f5f9;
     --text-muted: #94a3b8;
-    --border: rgba(255, 255, 255, 0.08);
-    --shadow: 0 10px 30px -10px rgba(0,0,0,0.3);
+    --border: rgba(168, 85, 247, 0.15);
+    --shadow: 0 10px 40px -10px rgba(0,0,0,0.5);
     --radius: 16px;
     --font-heading: 'Outfit', sans-serif;
     --font-body: 'Inter', sans-serif;
@@ -61,7 +61,7 @@ body {
 .mb-lg { margin-bottom: 4rem; }
 
 .highlight {
-    background: linear-gradient(120deg, #60a5fa 0%, #3b82f6 100%);
+    background: linear-gradient(120deg, var(--primary) 0%, var(--secondary) 100%);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -139,7 +139,7 @@ body {
     position: fixed;
     top: 0; left: 0; right: 0;
     padding: 1.5rem 0;
-    background: rgba(15, 23, 42, 0.8);
+    background: rgba(13, 0, 22, 0.85);
     backdrop-filter: blur(20px);
     z-index: 1000;
     border-bottom: 1px solid var(--border);
